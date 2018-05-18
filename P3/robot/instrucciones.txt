@@ -1,0 +1,25 @@
+Guia para el juego.
+
+
+Instrucciones:
+
+    Debe darle a espacio para comenzar a jugar.
+    Puede darle espacio para reanudar el juego.
+
+    Use las flechas para moverse por el mapa.
+    Use los botones desplegables para cambiar rotar algunas partes o alargar los brazos.
+
+    Pulse v para la cámara en primera persona .Con esta cámara gire la cabeza con los botones.
+
+Dificultad:
+
+La dificultad de este juego viene dada por:
+ 1.El número de vueltas que dan los OVOs (Flyobj), que tienen distintos niveles y con ello varía su velcidad.
+ 2.El número de puntos que hayamos obtenido,apareciendo cada vez más OVOs(FlyObj).
+ 3.Que cada vez que nos desplazamos,perdemos un punto de vida.
+ 4.La velocidad del robot no varía conforme avanza la partida.
+ 5.La vida máxima es 500.
+
+Para volver a jugar actualizar la página.
+
+No funciona muerte.
