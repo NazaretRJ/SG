@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Robot</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" src="cuadro.css">
+    <script type="text/javascript" src="../libs/three.js"></script>
+    <script type="text/javascript" src="../libs/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="../libs/stats.js"></script>
+    <script type="text/javascript" src="../libs/dat.gui.js"></script>
+    <script type="text/javascript" src="../libs/TrackballControls.js"></script>
+    <script type="text/javascript" src="Ground.js"></script>
+    <script type="text/javascript" src="FlyOb.js"></script>  
+    <script type="text/javascript" src="TheScene.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="Player.js"></script>
+    <script type="text/javascript" src="Flag.js"></script>
+    <script type="text/javascript" src="Obstaculo.js"></script>
+    <script type="text/javascript" src="Zone.js"></script>
+    
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+        }
+
+
+        #Contenedor{
+            position: absolute;
+            top: 5px;
+            left: 100px;
+            width: 500px;
+            background-color: gray;
+            border-style: solid;
+            height : 30px;
+        }
+
+        #Energy{
+            background-color:green;
+            width:500%;
+            height: 30px;
+        }
+
+        #Points{
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            color: black;
+            font-size : 15pt;
+            
+        }
+        
+        #cronometro{
+            position: absolute;
+            top: 5px;
+            left: 100px;
+            width: 200px;
+            border-style: solid;
+            height : 50px;
+            padding:10px; 
+            text-align: center;
+            background-color: #007;
+            border-radius: 5px;
+            float: left;
+        }
+        #reloj{ 
+            width: 90% ;
+            height: 90%;
+            border: 1px solid black;
+            text-align: center; 
+            margin: 2px,2px,2px,2px;
+            background-color: #f0ffff; 
+            border-radius: 3px;  
+        }
+
+        #reloj.segundos{
+            color:black;
+        }
+        #reloj.minutos{
+            color:black;
+        }
+
+        #dead{
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            color: black;
+            font-size : 30pt;
+        }
+        #winner{
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            color: black;
+            font-size : 30px;
+        }
+
+        #menu{
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            color: black;
+            font-size : 30px;
+            display:'initial';
+        }
+
+        #Flag{
+            position: absolute;
+            top: 20px;
+            left: 400px;
+            color: black;
+            font-size : 30px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Div which will show statistical information -->
+<div id="Stats-output">
+</div>
+
+<!-- Div which will show several messages -->
+<div style="position:absolute; left:100px; top:10px" id="Messages">
+</div>
+
+<!-- Div which will hold the Output -->
+<div id="WebGL-output">
+</div>
+
+<div id="cronometro">
+
+    <div id = "reloj">
+        00 : 00
+    </div>
+
+</div>
+
+<div id = "menu">
+    <h2>Catch the flag.</h2>
+    <b>Pulsa espacio para empezar</b>    
+</div>
+
+<div id = "winner">
+    ¡Felicidades!
+</div>
+
+<div id = "dead">
+    Game over :(
+</div>
+
+<div id = "Flag">
+    <img src="./imgs/flag.png" width="50" height="50">
+</div>
+
+</body>
+</html>
